@@ -44,11 +44,11 @@ public class BlazeDemoLoginTest extends BaseClass {
 	public void verifyApplicationDisplaysPageExpiredUponLoggingIn(String emailId, String password,
 			String expectedError) {
 		mp.getHomeButtonLink().click();
-		presenceOfElementWait(hp.emailIdFieldWait, 30);
+		presenceOfElementWait(driver, hp.emailIdFieldWait, 30);
 		hp.getEmailIdField().sendKeys(emailId);
 		hp.getPasswordField().sendKeys(password);
 		hp.getLoginButton().click();
-		presenceOfElementWait(hp.errorTextWait, 30);
+		presenceOfElementWait(driver, hp.errorTextWait, 30);
 		if (hp.getErrorText().getText().equalsIgnoreCase(expectedError)) {
 			Assert.assertTrue(true);
 			log.info("Test Case Passed");
@@ -62,7 +62,7 @@ public class BlazeDemoLoginTest extends BaseClass {
 	public void verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton() throws InterruptedException {
 
 		mp.getHomeButtonLink().click();
-		presenceOfElementWait(hp.emailIdFieldWait, 30);
+		presenceOfElementWait(driver, hp.emailIdFieldWait, 30);
 		ForgotPassword fp = hp.getForgotPasswordButton();
 		forceWait(5000);
 		Assert.assertEquals(fp.getSendLinkButton().getText().trim(), "Send Password Reset Link");
@@ -79,7 +79,7 @@ public class BlazeDemoLoginTest extends BaseClass {
 		Object[][] data = new Object[1][3];
 		data[0][0] = "abc@test.com";
 		data[0][1] = "1234";
-		data[0][2] = "Page Expired12";
+		data[0][2] = "Page Expired";
 		return data;
 	}
 }

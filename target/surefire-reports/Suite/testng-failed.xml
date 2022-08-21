@@ -10,8 +10,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="initializeDriverAndBrowser"/>
-          <include name="verifyApplicationDisplaysPageExpiredUponLoggingIn" invocation-numbers="0"/>
           <include name="reloadWebPage"/>
+          <include name="verifyApplicationDisplaysPageExpiredUponLoggingIn" invocation-numbers="0"/>
         </methods>
       </class> <!-- Frameworks.BlazeDemoLoginTest -->
     </classes>

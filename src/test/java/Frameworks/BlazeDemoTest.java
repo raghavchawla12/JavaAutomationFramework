@@ -12,6 +12,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import blazedemoUtils.BlazedemoUtilities;
 import pageObjects.FlightOptionsPage;
 import pageObjects.MainPage;
 import resources.BaseClass;
@@ -47,7 +49,7 @@ public class BlazeDemoTest extends BaseClass {
 		destinationDropdown.selectByIndex(1);
 		log.debug("Selected Destination Dropdown City");
 		mp.getFindFlightsButton().click();
-		elementToClickableWait(fop.chooseThisFlightButtonWait, 30);
+		elementToClickableWait(driver, fop.chooseThisFlightButtonWait, 30);
 		Assert.assertEquals(fop.getFlightOptionsCount().size(), 5);
 		log.info("Test Case Passed");
 	}
@@ -64,6 +66,15 @@ public class BlazeDemoTest extends BaseClass {
 	 * Assert.assertEquals(driver.findElement(By.cssSelector("div#finish h4")).
 	 * getText(), "Hello World!"); }
 	 */
+	
+	@Test
+	public void verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage() {
+		String expectedText = "Flights from Paris to Buenos Aires:";
+		BlazedemoUtilities bdu = new BlazedemoUtilities();
+		bdu.objectCreation(driver);
+		bdu.openChooseThisFlightPage(driver, 0, 0);
+		Assert.assertEquals(fop.getHeadingText().getText().trim(), expectedText);		
+	}
 
 	@AfterTest
 	public void tearDown() {

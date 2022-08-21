@@ -7,7 +7,7 @@
         <methods>
           <include name="reloadWebPage"/>
           <include name="initializeDriverAndBrowser"/>
-          <include name="deleteMe"/>
+          <include name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Frameworks.BlazeDemoTest -->

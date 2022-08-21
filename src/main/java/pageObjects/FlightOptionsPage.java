@@ -35,5 +35,11 @@ public class FlightOptionsPage {
 		return chooseThisFlightButton;
 	}
 	
+	@FindBy(tagName= "h3")
+	private WebElement headingText;
+	
+	public WebElement getHeadingText() {
+		return headingText;
+	}
 
 }

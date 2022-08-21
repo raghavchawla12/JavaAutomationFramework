@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired12)">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired12)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +104,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoTest" class="method navigator-link" hash-for-method="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,46 +134,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Frameworks.BlazeDemoLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired12)">
-                  </a> <!-- verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired12) -->
-                  <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn</span>
-                  <span class="parameters">(abc@test.com, 1234, Page Expired12)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at Frameworks.BlazeDemoLoginTest.verifyApplicationDisplaysPageExpiredUponLoggingIn(BlazeDemoLoginTest.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Frameworks.BlazeDemoLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton">
-                  </a> <!-- verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton -->
-                  <span class="method-name">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -186,9 +142,39 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage">
+                  </a> <!-- verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage -->
+                  <span class="method-name">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyTotalFlightOptionsAreFive">
                   </a> <!-- verifyTotalFlightOptionsAreFive -->
                   <span class="method-name">verifyTotalFlightOptionsAreFive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Frameworks.BlazeDemoLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)">
+                  </a> <!-- verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired) -->
+                  <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn</span>
+                  <span class="parameters">(abc@test.com, 1234, Page Expired)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton">
+                  </a> <!-- verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton -->
+                  <span class="method-name">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,19 +242,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton')
 data.setCell(0, 2, 'Frameworks.BlazeDemoLoginTest')
-data.setCell(0, 3, 6816);
+data.setCell(0, 3, 6920);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyApplicationDisplaysPageExpiredUponLoggingIn')
 data.setCell(1, 2, 'Frameworks.BlazeDemoLoginTest')
-data.setCell(1, 3, 2948);
+data.setCell(1, 3, 2761);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyTotalFlightOptionsAreFive')
+data.setCell(2, 1, 'verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage')
 data.setCell(2, 2, 'Frameworks.BlazeDemoTest')
-data.setCell(2, 3, 782);
+data.setCell(2, 3, 760);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyTotalFlightOptionsAreFive')
+data.setCell(3, 2, 'Frameworks.BlazeDemoTest')
+data.setCell(3, 3, 665);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -311,57 +301,57 @@ return data;
                 <span class="method-name">initializeDriverAndBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">reloadWebPage</span>
+                <span class="method-start">2511 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Frameworks.BlazeDemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">reloadWebPage</span>
-                <span class="method-start">2740 ms</span>
+                <span class="method-start">2584 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Frameworks.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">reloadWebPage</span>
-                <span class="method-start">2740 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)</span>
+                <span class="method-start">2921 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Frameworks.BlazeDemoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</span>
+                <span class="method-start">3004 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">reloadWebPage</span>
+                <span class="method-start">3768 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTotalFlightOptionsAreFive</span>
-                <span class="method-start">3239 ms</span>
+                <span class="method-start">4313 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired12)</span>
-                <span class="method-start">3241 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4026 ms</span>
+                <span class="method-start">4978 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Frameworks.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">reloadWebPage</span>
-                <span class="method-start">6289 ms</span>
+                <span class="method-start">5683 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</span>
-                <span class="method-start">6716 ms</span>
+                <span class="method-start">6458 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13533 ms</span>
+                <span class="method-start">13378 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

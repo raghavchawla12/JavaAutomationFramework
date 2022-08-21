@@ -65,18 +65,24 @@ public class BaseClass {
 		Thread.sleep(timeInMS);
 	}
 	
-	public void presenceOfElementWait(By element, int timeInSeconds) {
+	public void presenceOfElementWait(WebDriver  driver, By element, int timeInSeconds) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
 	     wait.until(ExpectedConditions.presenceOfElementLocated(element));
 	}
 	
-	public void elementToClickableWait(By element, int timeInSeconds) {
+	public void elementToClickableWait(WebDriver driver, By element, int timeInSeconds) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
 	     wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	public void textMatchesWait(By element, int timeInSeconds, String text) {
+	public void textMatchesWait(WebDriver driver, By element, int timeInSeconds, String text) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
 		 wait.until(ExpectedConditions.textToBe(element, text));
 	}
+	
+	public String getCurrentURLOfPage(WebDriver driver) {
+		return driver.getCurrentUrl();
+	}
+	
+	
 }
