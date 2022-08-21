@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-21T15:07:29 IST" name="Default suite" finished-at="2022-08-21T15:07:49 IST" duration-ms="20127">
+    <groups>
+    </groups>
+    <test started-at="2022-08-21T15:07:29 IST" name="Default test" finished-at="2022-08-21T15:07:49 IST" duration-ms="20127">
+      <class name="Frameworks.BlazeDemoTest">
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.BlazeDemoTest@51850751]" started-at="2022-08-21T15:07:29 IST" name="initializeDriverAndBrowser" finished-at="2022-08-21T15:07:32 IST" duration-ms="2337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverAndBrowser -->
+        <test-method is-config="true" signature="reloadWebPage()[pri:0, instance:Frameworks.BlazeDemoTest@51850751]" started-at="2022-08-21T15:07:32 IST" name="reloadWebPage" finished-at="2022-08-21T15:07:32 IST" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reloadWebPage -->
+        <test-method signature="deleteMe()[pri:0, instance:Frameworks.BlazeDemoTest@51850751]" started-at="2022-08-21T15:07:32 IST" name="deleteMe" finished-at="2022-08-21T15:07:49 IST" duration-ms="17147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMe -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.BlazeDemoTest@51850751]" started-at="2022-08-21T15:07:49 IST" name="tearDown" finished-at="2022-08-21T15:07:49 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Frameworks.BlazeDemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
