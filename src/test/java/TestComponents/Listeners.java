@@ -1,4 +1,4 @@
-package Frameworks;
+package TestComponents;
 
 import java.io.IOException;
 

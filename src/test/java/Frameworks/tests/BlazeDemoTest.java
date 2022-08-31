@@ -1,4 +1,4 @@
-package Frameworks;
+package Frameworks.tests;
 
 import java.io.IOException;
 
@@ -19,6 +19,7 @@ import blazedemoUtils.BlazedemoUtilities;
 import pageObjects.FlightOptionsPage;
 import pageObjects.MainPage;
 import resources.BaseClass;
+import TestComponents.Retry;
 
 public class BlazeDemoTest extends BaseClass {
 	public WebDriver driver;
@@ -37,7 +38,7 @@ public class BlazeDemoTest extends BaseClass {
 		bdu.objectCreation(driver);
 	}
 
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void verifyTotalFlightOptionsAreFive() {
 		mp.selectDepartureDropdown(2);
 		mp.selectDestinationDropdown(1);
@@ -59,7 +60,7 @@ public class BlazeDemoTest extends BaseClass {
 	 * getText(), "Hello World!"); }
 	 */
 
-	@Test
+	@Test(retryAnalyzer = Retry.class)
 	public void verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage() {
 		String expectedText = "Flights from Paris to Buenos Aires:";
 		bdu.openChooseThisFlightPage(2, 1);

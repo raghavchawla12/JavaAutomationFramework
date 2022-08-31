@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\ragha\eclipse-workspace\WebFramework\testng.xml</span>
+                    <span>C:\Users\ragha\eclipse-workspace\WebFramework\TestSuites\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,  1 skipped,  5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,25 +104,24 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com})">verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com})">verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoTest" class="method navigator-link" hash-for-method="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.tests.BlazeDemoTest" class="method navigator-link" hash-for-method="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.tests.BlazeDemoTest" class="method navigator-link" hash-for-method="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,12 +132,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.tests.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Frameworks.BlazeDemoTest" class="method navigator-link" hash-for-method="verifyTotalFlightOptionsAreFive">verifyTotalFlightOptionsAreFive</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.tests.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.tests.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com})">verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.tests.BlazeDemoLoginTest" class="method navigator-link" hash-for-method="verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com})">verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Frameworks.tests.BlazeDemoTest" class="method navigator-link" hash-for-method="verifyTotalFlightOptionsAreFive">verifyTotalFlightOptionsAreFive</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -156,150 +170,7 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Frameworks.BlazeDemoLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)">
-                  </a> <!-- verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired) -->
-                  <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn</span>
-                  <span class="parameters">(abc@test.com, 1234, Page Expired)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
-	at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
-	at Frameworks.BlazeDemoLoginTest.verifyApplicationDisplaysPageExpiredUponLoggingIn(BlazeDemoLoginTest.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.message&quot;}
-  (Session info: chrome=105.0.5195.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;LAPTOP-AI2V30RF&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [34e97a0d5ad03905d7e83442f15817b9, findElement {using=css selector, value=div.message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61733/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 34e97a0d5ad03905d7e83442f15817b9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 26 more
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com})">
-                  </a> <!-- verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com}) -->
-                  <span class="method-name">verifyJsonTestDataTestCase</span>
-                  <span class="parameters">({password=abcd, text=Page Expired, email=abc@abc.com})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
-	at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
-	at Frameworks.BlazeDemoLoginTest.verifyJsonTestDataTestCase(BlazeDemoLoginTest.java:72)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.message&quot;}
-  (Session info: chrome=105.0.5195.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;LAPTOP-AI2V30RF&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6607d5a092f4776b2c24095889666a0d, findElement {using=css selector, value=div.message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62004/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6607d5a092f4776b2c24095889666a0d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 26 more
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com})">
-                  </a> <!-- verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com}) -->
-                  <span class="method-name">verifyJsonTestDataTestCase</span>
-                  <span class="parameters">({password=1234, text=Page Expired, email=abc@test.com})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
-	at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
-	at Frameworks.BlazeDemoLoginTest.verifyJsonTestDataTestCase(BlazeDemoLoginTest.java:72)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.message&quot;}
-  (Session info: chrome=105.0.5195.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;LAPTOP-AI2V30RF&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40cc1accb45bc1ddea9fd196116c4385, findElement {using=css selector, value=div.message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61907}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61907/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 40cc1accb45bc1ddea9fd196116c4385
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 26 more
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Frameworks.BlazeDemoTest</span>
+              <span class="class-name">Frameworks.tests.BlazeDemoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -308,7 +179,7 @@ Session ID: 40cc1accb45bc1ddea9fd196116c4385
                   </a> <!-- verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage -->
                   <span class="method-name">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Flights from Paris to Buenos Aires:] but found [Flights from Boston to Rome:]
-	at Frameworks.BlazeDemoTest.verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage(BlazeDemoTest.java:66)
+	at Frameworks.tests.BlazeDemoTest.verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage(BlazeDemoTest.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -320,12 +191,44 @@ Session ID: 40cc1accb45bc1ddea9fd196116c4385
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Frameworks.tests.BlazeDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage">
+                  </a> <!-- verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage -->
+                  <span class="method-name">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Flights from Paris to Buenos Aires:] but found [Flights from Boston to Rome:]
+	at Frameworks.tests.BlazeDemoTest.verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage(BlazeDemoTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Frameworks.BlazeDemoLoginTest</span>
+              <span class="class-name">Frameworks.tests.BlazeDemoLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)">
+                  </a> <!-- verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired) -->
+                  <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn</span>
+                  <span class="parameters">(abc@test.com, 1234, Page Expired)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton">
@@ -333,12 +236,28 @@ Session ID: 40cc1accb45bc1ddea9fd196116c4385
                   <span class="method-name">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com})">
+                  </a> <!-- verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com}) -->
+                  <span class="method-name">verifyJsonTestDataTestCase</span>
+                  <span class="parameters">({password=1234, text=Page Expired, email=abc@test.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com})">
+                  </a> <!-- verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com}) -->
+                  <span class="method-name">verifyJsonTestDataTestCase</span>
+                  <span class="parameters">({password=abcd, text=Page Expired, email=abc@abc.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Frameworks.BlazeDemoTest</span>
+              <span class="class-name">Frameworks.tests.BlazeDemoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -353,7 +272,7 @@ Session ID: 40cc1accb45bc1ddea9fd196116c4385
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ragha\eclipse-workspace\WebFramework\testng.xml</span>
+            <span class="header-content">C:\Users\ragha\eclipse-workspace\WebFramework\TestSuites\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -361,16 +280,16 @@ Session ID: 40cc1accb45bc1ddea9fd196116c4385
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;Frameworks.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;TestComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;BlazeDemoWebSiteTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Frameworks.BlazeDemoTest&quot;/&gt;
+      &lt;class name=&quot;Frameworks.tests.BlazeDemoTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BlazeDemoWebSiteTest --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;BlazeDemoLoginTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Frameworks.BlazeDemoLoginTest&quot;/&gt;
+      &lt;class name=&quot;Frameworks.tests.BlazeDemoLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BlazeDemoLoginTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -413,36 +332,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyJsonTestDataTestCase')
-data.setCell(0, 2, 'Frameworks.BlazeDemoLoginTest')
-data.setCell(0, 3, 33601);
+data.setCell(0, 1, 'verifyApplicationDisplaysPageExpiredUponLoggingIn')
+data.setCell(0, 2, 'Frameworks.tests.BlazeDemoLoginTest')
+data.setCell(0, 3, 7434);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyApplicationDisplaysPageExpiredUponLoggingIn')
-data.setCell(1, 2, 'Frameworks.BlazeDemoLoginTest')
-data.setCell(1, 3, 33414);
+data.setCell(1, 1, 'verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton')
+data.setCell(1, 2, 'Frameworks.tests.BlazeDemoLoginTest')
+data.setCell(1, 3, 7370);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyJsonTestDataTestCase')
-data.setCell(2, 2, 'Frameworks.BlazeDemoLoginTest')
-data.setCell(2, 3, 33391);
+data.setCell(2, 1, 'verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage')
+data.setCell(2, 2, 'Frameworks.tests.BlazeDemoTest')
+data.setCell(2, 3, 2607);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton')
-data.setCell(3, 2, 'Frameworks.BlazeDemoLoginTest')
-data.setCell(3, 3, 7468);
+data.setCell(3, 1, 'verifyJsonTestDataTestCase')
+data.setCell(3, 2, 'Frameworks.tests.BlazeDemoLoginTest')
+data.setCell(3, 3, 2579);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage')
-data.setCell(4, 2, 'Frameworks.BlazeDemoTest')
-data.setCell(4, 3, 873);
+data.setCell(4, 1, 'verifyJsonTestDataTestCase')
+data.setCell(4, 2, 'Frameworks.tests.BlazeDemoLoginTest')
+data.setCell(4, 3, 2503);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyTotalFlightOptionsAreFive')
-data.setCell(5, 2, 'Frameworks.BlazeDemoTest')
-data.setCell(5, 3, 767);
+data.setCell(5, 1, 'verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage')
+data.setCell(5, 2, 'Frameworks.tests.BlazeDemoTest')
+data.setCell(5, 3, 1154);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyTotalFlightOptionsAreFive')
+data.setCell(6, 2, 'Frameworks.tests.BlazeDemoTest')
+data.setCell(6, 3, 785);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -468,101 +391,113 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriverAndBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriverAndBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)</span>
+                <span class="method-start">4494 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</span>
+                <span class="method-start">5160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7771 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriverAndBrowser</span>
+                <span class="method-start">7893 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</span>
-                <span class="method-start">2538 ms</span>
+                <span class="method-start">10111 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyApplicationDisplaysPageExpiredUponLoggingIn(abc@test.com, 1234, Page Expired)</span>
-                <span class="method-start">2538 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3849 ms</span>
+                <span class="method-start">11679 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriverAndBrowser</span>
-                <span class="method-start">3983 ms</span>
+                <span class="method-start">11813 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11931 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriverAndBrowser</span>
+                <span class="method-start">12105 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyTotalFlightOptionsAreFive</span>
-                <span class="method-start">5678 ms</span>
+                <span class="method-start">16268 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</span>
+                <span class="method-start">16411 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6446 ms</span>
+                <span class="method-start">17054 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Frameworks.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Frameworks.tests.BlazeDemoLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36700 ms</span>
+                <span class="method-start">23782 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriverAndBrowser</span>
-                <span class="method-start">36826 ms</span>
+                <span class="method-start">24072 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</span>
-                <span class="method-start">38488 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">45958 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initializeDriverAndBrowser</span>
-                <span class="method-start">46504 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyJsonTestDataTestCase({password=1234, text=Page Expired, email=abc@test.com})</span>
-                <span class="method-start">48174 ms</span>
+                <span class="method-start">25633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">82524 ms</span>
+                <span class="method-start">28213 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeDriverAndBrowser</span>
-                <span class="method-start">82639 ms</span>
+                <span class="method-start">28349 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyJsonTestDataTestCase({password=abcd, text=Page Expired, email=abc@abc.com})</span>
-                <span class="method-start">84285 ms</span>
+                <span class="method-start">30001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">118543 ms</span>
+                <span class="method-start">32505 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
