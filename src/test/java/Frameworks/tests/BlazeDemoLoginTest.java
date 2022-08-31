@@ -1,4 +1,4 @@
-package Frameworks;
+package Frameworks.tests;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -24,6 +24,7 @@ import pageObjects.ForgotPassword;
 import pageObjects.HomePage;
 import pageObjects.MainPage;
 import resources.BaseClass;
+import TestComponents.Retry;
 
 public class BlazeDemoLoginTest extends BaseClass {
 	public WebDriver driver;
@@ -39,7 +40,7 @@ public class BlazeDemoLoginTest extends BaseClass {
 		hp = new HomePage(driver);
 	}
 
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData", retryAnalyzer=Retry.class)
 	public void verifyApplicationDisplaysPageExpiredUponLoggingIn(String emailId, String password,
 			String expectedError) {
 		mp.clickOnHomeButton();
@@ -55,7 +56,7 @@ public class BlazeDemoLoginTest extends BaseClass {
 		}
 	}
 
-	@Test
+	@Test(retryAnalyzer=Retry.class)
 	public void verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton() throws InterruptedException {
 
 		mp.clickOnHomeButton();

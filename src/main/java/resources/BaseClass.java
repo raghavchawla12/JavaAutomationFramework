@@ -32,12 +32,14 @@ public class BaseClass {
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
+		// String browserName = prop.getProperty("browser");
 		// if need to parameterize browser from jenkins
 		// String browserName = System.getProperty("browser"); rest all same
 		// In maven command pass as mvn test -Dbrowser="chrome"
+		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+				: prop.getProperty("browser");
 		ChromeOptions options = new ChromeOptions();
-		// options.addArguments("--headless");
+		options.addArguments("--headless");
 		if (browserName.equals("chrome")) {
 			// need to use .equals() method to compare value of browserName instead of "=="
 			// as we are comparing from data.properties file

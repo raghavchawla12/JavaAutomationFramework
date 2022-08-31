@@ -2,18 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
-    <listener class-name="Frameworks.Listeners"/>
+    <listener class-name="TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="BlazeDemoLoginTest(failed)" verbose="0">
+  <test thread-count="5" parallel="tests" name="BlazeDemoWebSiteTest(failed)" verbose="0">
     <classes>
-      <class name="Frameworks.BlazeDemoLoginTest">
+      <class name="Frameworks.tests.BlazeDemoTest">
         <methods>
           <include name="tearDown"/>
+          <include name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage"/>
           <include name="initializeDriverAndBrowser"/>
-          <include name="reloadWebPage"/>
-          <include name="verifyApplicationDisplaysPageExpiredUponLoggingIn" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Frameworks.BlazeDemoLoginTest -->
+      </class> <!-- Frameworks.tests.BlazeDemoTest -->
     </classes>
-  </test> <!-- BlazeDemoLoginTest(failed) -->
+  </test> <!-- BlazeDemoWebSiteTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

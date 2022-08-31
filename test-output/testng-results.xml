@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
+<testng-results retried="1" ignored="0" total="7" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-31T21:53:58 IST" name="Suite" finished-at="2022-08-31T21:55:57 IST" duration-ms="118693">
+  <suite started-at="2022-08-31T22:21:49 IST" name="Suite" finished-at="2022-08-31T22:22:21 IST" duration-ms="32652">
     <groups>
     </groups>
-    <test started-at="2022-08-31T21:53:58 IST" name="BlazeDemoWebSiteTest" finished-at="2022-08-31T21:54:05 IST" duration-ms="6585">
-      <class name="Frameworks.BlazeDemoTest">
-        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.BlazeDemoTest@33a2499c]" started-at="2022-08-31T21:53:58 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T21:54:01 IST" duration-ms="2538" status="PASS">
+    <test started-at="2022-08-31T22:21:49 IST" name="BlazeDemoWebSiteTest" finished-at="2022-08-31T22:22:06 IST" duration-ms="17191">
+      <class name="Frameworks.tests.BlazeDemoTest">
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:21:49 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T22:21:54 IST" duration-ms="5160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndBrowser -->
-        <test-method signature="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage()[pri:0, instance:Frameworks.BlazeDemoTest@33a2499c]" started-at="2022-08-31T21:54:01 IST" name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage" finished-at="2022-08-31T21:54:02 IST" duration-ms="873" status="FAIL">
+        <test-method retried="true" signature="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:21:54 IST" name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage" finished-at="2022-08-31T22:21:57 IST" duration-ms="2607" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Flights from Paris to Buenos Aires:] but found [Flights from Boston to Rome:]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at Frameworks.BlazeDemoTest.verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage(BlazeDemoTest.java:66)
+at Frameworks.tests.BlazeDemoTest.verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage(BlazeDemoTest.java:67)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,31 +54,82 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.BlazeDemoTest@33a2499c]" started-at="2022-08-31T21:54:02 IST" name="tearDown" finished-at="2022-08-31T21:54:02 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:21:57 IST" name="tearDown" finished-at="2022-08-31T22:21:57 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.BlazeDemoTest@33a2499c]" started-at="2022-08-31T21:54:02 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T21:54:04 IST" duration-ms="1695" status="PASS">
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:21:57 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T22:21:59 IST" duration-ms="2218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndBrowser -->
-        <test-method signature="verifyTotalFlightOptionsAreFive()[pri:0, instance:Frameworks.BlazeDemoTest@33a2499c]" started-at="2022-08-31T21:54:04 IST" name="verifyTotalFlightOptionsAreFive" finished-at="2022-08-31T21:54:05 IST" duration-ms="767" status="PASS">
+        <test-method signature="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:21:59 IST" name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage" finished-at="2022-08-31T22:22:00 IST" duration-ms="1154" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Flights from Paris to Buenos Aires:] but found [Flights from Boston to Rome:]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Flights from Paris to Buenos Aires:] but found [Flights from Boston to Rome:]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Frameworks.tests.BlazeDemoTest.verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage(BlazeDemoTest.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:22:01 IST" name="tearDown" finished-at="2022-08-31T22:22:01 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:22:01 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T22:22:05 IST" duration-ms="4455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriverAndBrowser -->
+        <test-method signature="verifyTotalFlightOptionsAreFive()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:22:05 IST" name="verifyTotalFlightOptionsAreFive" finished-at="2022-08-31T22:22:06 IST" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalFlightOptionsAreFive -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.BlazeDemoTest@33a2499c]" started-at="2022-08-31T21:54:05 IST" name="tearDown" finished-at="2022-08-31T21:54:05 IST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.tests.BlazeDemoTest@33a2499c]" started-at="2022-08-31T22:22:06 IST" name="tearDown" finished-at="2022-08-31T22:22:06 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Frameworks.BlazeDemoTest -->
+      </class> <!-- Frameworks.tests.BlazeDemoTest -->
     </test> <!-- BlazeDemoWebSiteTest -->
-    <test started-at="2022-08-31T21:53:58 IST" name="BlazeDemoLoginTest" finished-at="2022-08-31T21:55:57 IST" duration-ms="118693">
-      <class name="Frameworks.BlazeDemoLoginTest">
-        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:53:58 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T21:54:01 IST" duration-ms="2538" status="PASS">
+    <test started-at="2022-08-31T22:21:49 IST" name="BlazeDemoLoginTest" finished-at="2022-08-31T22:22:21 IST" duration-ms="32652">
+      <class name="Frameworks.tests.BlazeDemoLoginTest">
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:21:49 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T22:21:53 IST" duration-ms="4494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndBrowser -->
-        <test-method signature="verifyApplicationDisplaysPageExpiredUponLoggingIn(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:54:01 IST" name="verifyApplicationDisplaysPageExpiredUponLoggingIn" data-provider="getData" finished-at="2022-08-31T21:54:34 IST" duration-ms="33414" status="FAIL">
+        <test-method signature="verifyApplicationDisplaysPageExpiredUponLoggingIn(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:21:53 IST" name="verifyApplicationDisplaysPageExpiredUponLoggingIn" data-provider="getData" finished-at="2022-08-31T22:22:01 IST" duration-ms="7434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,95 +147,30 @@ at java.base/java.lang.Thread.run(Thread.java:833)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
-at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
-at Frameworks.BlazeDemoLoginTest.verifyApplicationDisplaysPageExpiredUponLoggingIn(BlazeDemoLoginTest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.message"}
-  (Session info: chrome=105.0.5195.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LAPTOP-AI2V30RF', ip: '192.168.1.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [34e97a0d5ad03905d7e83442f15817b9, findElement {using=css selector, value=div.message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61733/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 34e97a0d5ad03905d7e83442f15817b9
-at jdk.internal.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplicationDisplaysPageExpiredUponLoggingIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:54:35 IST" name="tearDown" finished-at="2022-08-31T21:54:35 IST" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:01 IST" name="tearDown" finished-at="2022-08-31T22:22:01 IST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:54:35 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T21:54:37 IST" duration-ms="1662" status="PASS">
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:01 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T22:22:05 IST" duration-ms="4306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndBrowser -->
-        <test-method signature="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:54:37 IST" name="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton" finished-at="2022-08-31T21:54:44 IST" duration-ms="7468" status="PASS">
+        <test-method signature="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:05 IST" name="verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton" finished-at="2022-08-31T22:22:13 IST" duration-ms="7370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:54:44 IST" name="tearDown" finished-at="2022-08-31T21:54:44 IST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:13 IST" name="tearDown" finished-at="2022-08-31T22:22:13 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:54:45 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T21:54:46 IST" duration-ms="1670" status="PASS">
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:13 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T22:22:14 IST" duration-ms="1561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndBrowser -->
-        <test-method signature="verifyJsonTestDataTestCase(java.util.HashMap)[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:54:46 IST" name="verifyJsonTestDataTestCase" data-provider="getDataJson" finished-at="2022-08-31T21:55:20 IST" duration-ms="33601" status="FAIL">
+        <test-method signature="verifyJsonTestDataTestCase(java.util.HashMap)[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:14 IST" name="verifyJsonTestDataTestCase" data-provider="getDataJson" finished-at="2022-08-31T22:22:17 IST" duration-ms="2579" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,83 +178,18 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
-at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
-at Frameworks.BlazeDemoLoginTest.verifyJsonTestDataTestCase(BlazeDemoLoginTest.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.message"}
-  (Session info: chrome=105.0.5195.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LAPTOP-AI2V30RF', ip: '192.168.1.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40cc1accb45bc1ddea9fd196116c4385, findElement {using=css selector, value=div.message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61907}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61907/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 40cc1accb45bc1ddea9fd196116c4385
-at jdk.internal.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyJsonTestDataTestCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:55:21 IST" name="tearDown" finished-at="2022-08-31T21:55:21 IST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:17 IST" name="tearDown" finished-at="2022-08-31T22:22:17 IST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:55:21 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T21:55:23 IST" duration-ms="1646" status="PASS">
+        <test-method is-config="true" signature="initializeDriverAndBrowser()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:17 IST" name="initializeDriverAndBrowser" finished-at="2022-08-31T22:22:19 IST" duration-ms="1652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriverAndBrowser -->
-        <test-method signature="verifyJsonTestDataTestCase(java.util.HashMap)[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:55:23 IST" name="verifyJsonTestDataTestCase" data-provider="getDataJson" finished-at="2022-08-31T21:55:56 IST" duration-ms="33391" status="FAIL">
+        <test-method signature="verifyJsonTestDataTestCase(java.util.HashMap)[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:19 IST" name="verifyJsonTestDataTestCase" data-provider="getDataJson" finished-at="2022-08-31T22:22:21 IST" duration-ms="2503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -276,79 +197,14 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
-at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
-at Frameworks.BlazeDemoLoginTest.verifyJsonTestDataTestCase(BlazeDemoLoginTest.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.message"}
-  (Session info: chrome=105.0.5195.54)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'LAPTOP-AI2V30RF', ip: '192.168.1.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6607d5a092f4776b2c24095889666a0d, findElement {using=css selector, value=div.message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62004/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6607d5a092f4776b2c24095889666a0d
-at jdk.internal.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyJsonTestDataTestCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.BlazeDemoLoginTest@35e52059]" started-at="2022-08-31T21:55:57 IST" name="tearDown" finished-at="2022-08-31T21:55:57 IST" duration-ms="128" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Frameworks.tests.BlazeDemoLoginTest@49bd54f7]" started-at="2022-08-31T22:22:21 IST" name="tearDown" finished-at="2022-08-31T22:22:21 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Frameworks.BlazeDemoLoginTest -->
+      </class> <!-- Frameworks.tests.BlazeDemoLoginTest -->
     </test> <!-- BlazeDemoLoginTest -->
   </suite> <!-- Suite -->
 </testng-results>
