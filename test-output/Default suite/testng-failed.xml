@@ -5,7 +5,6 @@
     <classes>
       <class name="Frameworks.BlazeDemoTest">
         <methods>
-          <include name="reloadWebPage"/>
           <include name="initializeDriverAndBrowser"/>
           <include name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage"/>
           <include name="tearDown"/>

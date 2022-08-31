@@ -5,19 +5,24 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ForgotPassword {
+import resources.AbstractMethods;
+
+public class ForgotPassword extends AbstractMethods {
 
 	WebDriver driver;
 
 	public ForgotPassword(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	// Locators
 	@FindBy(css="button.btn,btn-primary")
-	private WebElement sendLinkButton;
+	public WebElement sendLinkButton;
 	
-	public WebElement getSendLinkButton() {
-		return sendLinkButton;
+	// Actions
+	public String getSendLinkButtonText() {
+		return sendLinkButton.getText().trim();
 	}
 }

@@ -31,7 +31,7 @@ public class BaseClass {
 		// String browserName = System.getProperty("browser"); rest all same
 		// In maven command pass as mvn test -Dbrowser="chrome"
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+		// options.addArguments("--headless");
 		if (browserName.equals("chrome")) {
 			// need to use .equals() method to compare value of browserName instead of "=="
 			// as we are comparing from data.properties file
@@ -64,25 +64,9 @@ public class BaseClass {
 	public void forceWait(int timeInMS) throws InterruptedException {
 		Thread.sleep(timeInMS);
 	}
-	
-	public void presenceOfElementWait(WebDriver  driver, By element, int timeInSeconds) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
-	     wait.until(ExpectedConditions.presenceOfElementLocated(element));
-	}
-	
-	public void elementToClickableWait(WebDriver driver, By element, int timeInSeconds) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
-	     wait.until(ExpectedConditions.elementToBeClickable(element));
-	}
-	
-	public void textMatchesWait(WebDriver driver, By element, int timeInSeconds, String text) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
-		 wait.until(ExpectedConditions.textToBe(element, text));
-	}
-	
+
 	public String getCurrentURLOfPage(WebDriver driver) {
 		return driver.getCurrentUrl();
 	}
-	
-	
+
 }

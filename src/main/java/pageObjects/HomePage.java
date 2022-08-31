@@ -6,54 +6,60 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+import resources.AbstractMethods;
+
+public class HomePage extends AbstractMethods {
 
 	WebDriver driver;
 
 	public HomePage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-	@FindBy(css = "input#email")
-	private WebElement emailIdField;
-
-	public WebElement getEmailIdField() {
-		return emailIdField;
-	}
 	
+	// Wait Locators
 	public By emailIdFieldWait = By.cssSelector("input#email");
+	public By errorTextWait = By.cssSelector("div.message");
 
+	// Locators
+	@FindBy(css = "input#email")
+	public WebElement emailIdField;
+	
 	@FindBy(css = "input#password")
-	private WebElement passwordField;
-
-	public WebElement getPasswordField() {
-		return passwordField;
-	}
+	public WebElement passwordField;
 
 	@FindBy(css = "button.btn.btn-primary")
-	private WebElement loginButton;
-
-	public WebElement getLoginButton() {
-		return loginButton;
-	}
+	public WebElement loginButton;
 
 	@FindBy(css = "div.message")
 	private WebElement errorText;
 
-	public WebElement getErrorText() {
-		return errorText;
-	}
-	
-	public By errorTextWait = By.cssSelector("div.message");
-	
 	@FindBy(css="a.btn.btn-link")
 	private WebElement forgotPasswordButton;
 	
-	public ForgotPassword getForgotPasswordButton() {
+	// Action
+	public void sendTextInEmailField(String email) {
+		emailIdField.sendKeys(email);
+	}
+	
+	public void sendTextInPasswordField(String password) {
+		passwordField.sendKeys(password);
+	}
+	
+	public void clickOnLoginButton() {
+		loginButton.click();
+		presenceOfElementWait(errorTextWait, 30);
+	}
+	
+	public String getErrorText() {
+		return errorText.getText().trim();
+	}
+	
+	public ForgotPassword clickOnForgotPasswordButton() {
 		forgotPasswordButton.click();
-		// ForgotPassword fp = new ForgotPassword(driver);
-		// return fp;
 		return new ForgotPassword(driver);
 	}
+	
+	
 }
