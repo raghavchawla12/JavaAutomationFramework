@@ -2,6 +2,8 @@ package Frameworks;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,7 +31,7 @@ public class BlazeDemoLoginTest extends BaseClass {
 	HomePage hp;
 	private static Logger log = LogManager.getLogger(BlazeDemoLoginTest.class.getName());
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void initializeDriverAndBrowser() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
@@ -62,7 +64,22 @@ public class BlazeDemoLoginTest extends BaseClass {
 		Assert.assertEquals(fp.getSendLinkButtonText(), "Send Password Reset Link");
 	}
 
-	@AfterMethod
+	@Test(dataProvider = "getDataJson")
+	public void verifyJsonTestDataTestCase(HashMap<String, String> input) {
+		mp.clickOnHomeButton();
+		hp.sendTextInEmailField(input.get("email"));
+		hp.sendTextInPasswordField(input.get("password"));
+		hp.clickOnLoginButton();
+		if (hp.getErrorText().equalsIgnoreCase(input.get("text"))) {
+			log.info("Test Case Passed with Assertion Pass");
+			Assert.assertTrue(true);
+		} else {
+			log.error("Test Case Failed with Assertion Fail");
+			Assert.assertTrue(false);
+		}
+	}
+
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 	}
@@ -74,5 +91,29 @@ public class BlazeDemoLoginTest extends BaseClass {
 		data[0][1] = "1234";
 		data[0][2] = "Page Expired";
 		return data;
+	}
+
+	@DataProvider
+	public Object[][] getDataJson() throws IOException {
+		List<HashMap<String, String>> data = getJsonDataToMap(
+				System.getProperty("user.dir") + "//src//test//java//Frameworks//TestData//LoginTestData.json");
+		return new Object[][] { { data.get(0) }, { data.get(1) } };
+
+// 		@DataProvider
+//		public Object[][] getData()
+//		  {
+//		    return new Object[][]  {{"abc@test.com","1234","Page Expired"}, 
+		// {"abc@abc.com","abcd","Page Expired" } };
+//		    
+//		  }
+//		HashMap<String,String> map = new HashMap<String,String>();
+//		map.put("email", "abc@test.com");
+//		map.put("password", "1234");
+//		map.put("text", "Page Expired");
+		//
+//		HashMap<String,String> map1 = new HashMap<String,String>();
+//		map1.put("email", "abc@abc.com");
+//		map1.put("password", "abcd");
+//		map1.put("text", "Page Expired");
 	}
 }

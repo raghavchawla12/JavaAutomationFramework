@@ -15,4 +15,16 @@
       </class> <!-- Frameworks.BlazeDemoTest -->
     </classes>
   </test> <!-- BlazeDemoWebSiteTest(failed) -->
+  <test thread-count="5" parallel="tests" name="BlazeDemoLoginTest(failed)">
+    <classes>
+      <class name="Frameworks.BlazeDemoLoginTest">
+        <methods>
+          <include name="verifyJsonTestDataTestCase" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="initializeDriverAndBrowser"/>
+          <include name="verifyApplicationDisplaysPageExpiredUponLoggingIn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Frameworks.BlazeDemoLoginTest -->
+    </classes>
+  </test> <!-- BlazeDemoLoginTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

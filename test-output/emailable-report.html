@@ -9,12 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">BlazeDemoWebSiteTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,535</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">BlazeDemoLoginTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,296</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">22,831</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">BlazeDemoWebSiteTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,585</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">BlazeDemoLoginTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">118,693</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">125,278</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BlazeDemoWebSiteTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Frameworks.BlazeDemoTest</td><td><a href="#m0">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</a></td><td rowspan="1">1661933890711</td><td rowspan="1">1498</td></tr><tr><th colspan="4">BlazeDemoWebSiteTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Frameworks.BlazeDemoTest</td><td><a href="#m1">verifyTotalFlightOptionsAreFive</a></td><td rowspan="1">1661933894658</td><td rowspan="1">837</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">BlazeDemoLoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Frameworks.BlazeDemoLoginTest</td><td><a href="#m2">verifyApplicationDisplaysPageExpiredUponLoggingIn</a></td><td rowspan="1">1661933890710</td><td rowspan="1">3074</td></tr><tr class="passedeven"><td><a href="#m3">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</a></td><td rowspan="1">1661933895767</td><td rowspan="1">7486</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BlazeDemoWebSiteTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Frameworks.BlazeDemoTest</td><td><a href="#m0">verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</a></td><td rowspan="1">1661963041341</td><td rowspan="1">873</td></tr><tr><th colspan="4">BlazeDemoWebSiteTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Frameworks.BlazeDemoTest</td><td><a href="#m1">verifyTotalFlightOptionsAreFive</a></td><td rowspan="1">1661963044481</td><td rowspan="1">767</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">BlazeDemoLoginTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Frameworks.BlazeDemoLoginTest</td><td><a href="#m2">verifyApplicationDisplaysPageExpiredUponLoggingIn</a></td><td rowspan="1">1661963041341</td><td rowspan="1">33414</td></tr><tr class="failedeven"><td><a href="#m3">verifyJsonTestDataTestCase</a></td><td rowspan="2">1661963123088</td><td rowspan="2">33391</td></tr><tr class="failedeven"><td><a href="#m4">verifyJsonTestDataTestCase</a></td></tr><tr><th colspan="4">BlazeDemoLoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Frameworks.BlazeDemoLoginTest</td><td><a href="#m5">verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</a></td><td rowspan="1">1661963077291</td><td rowspan="1">7468</td></tr></tbody>
 </table>
 <h2>BlazeDemoWebSiteTest</h2><h3 id="m0">Frameworks.BlazeDemoTest#verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Flights from Paris to Buenos Aires:] but found [Flights from Boston to Rome:]
 	at Frameworks.BlazeDemoTest.verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage(BlazeDemoTest.java:66)
@@ -25,7 +25,114 @@
 	at java.base/java.lang.Thread.run(Thread.java:833)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">Frameworks.BlazeDemoTest#verifyTotalFlightOptionsAreFive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>BlazeDemoLoginTest</h2><h3 id="m2">Frameworks.BlazeDemoLoginTest#verifyApplicationDisplaysPageExpiredUponLoggingIn</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>abc@test.com</td><td>1234</td><td>Page Expired</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Frameworks.BlazeDemoLoginTest#verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>BlazeDemoLoginTest</h2><h3 id="m2">Frameworks.BlazeDemoLoginTest#verifyApplicationDisplaysPageExpiredUponLoggingIn</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>abc@test.com</td><td>1234</td><td>Page Expired</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
+	at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
+	at Frameworks.BlazeDemoLoginTest.verifyApplicationDisplaysPageExpiredUponLoggingIn(BlazeDemoLoginTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.message&quot;}
+  (Session info: chrome=105.0.5195.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-AI2V30RF&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34e97a0d5ad03905d7e83442f15817b9, findElement {using=css selector, value=div.message}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61733/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 34e97a0d5ad03905d7e83442f15817b9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 26 more
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Frameworks.BlazeDemoLoginTest#verifyJsonTestDataTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=abcd, text=Page Expired, email=abc@abc.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
+	at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
+	at Frameworks.BlazeDemoLoginTest.verifyJsonTestDataTestCase(BlazeDemoLoginTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.message&quot;}
+  (Session info: chrome=105.0.5195.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-AI2V30RF&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6607d5a092f4776b2c24095889666a0d, findElement {using=css selector, value=div.message}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62004}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62004/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6607d5a092f4776b2c24095889666a0d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 26 more
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Frameworks.BlazeDemoLoginTest#verifyJsonTestDataTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=1234, text=Page Expired, email=abc@test.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.message (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at resources.AbstractMethods.presenceOfElementWait(AbstractMethods.java:21)
+	at pageObjects.HomePage.clickOnLoginButton(HomePage.java:52)
+	at Frameworks.BlazeDemoLoginTest.verifyJsonTestDataTestCase(BlazeDemoLoginTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.message&quot;}
+  (Session info: chrome=105.0.5195.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-AI2V30RF&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40cc1accb45bc1ddea9fd196116c4385, findElement {using=css selector, value=div.message}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.54, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ragha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61907}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61907/devtoo..., se:cdpVersion: 105.0.5195.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40cc1accb45bc1ddea9fd196116c4385
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 26 more
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Frameworks.BlazeDemoLoginTest#verifyForgotPasswordPageIsOpeningUponClickingOnForgotPasswordButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
