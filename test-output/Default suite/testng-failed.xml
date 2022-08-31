@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Frameworks.BlazeDemoTest">
+      <class name="Frameworks.BlazeDemoLoginTest">
         <methods>
-          <include name="reloadWebPage"/>
-          <include name="initializeDriverAndBrowser"/>
-          <include name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage"/>
+          <include name="verifyJsonTestDataTestCase" invocation-numbers="0 1"/>
           <include name="tearDown"/>
+          <include name="initializeDriverAndBrowser"/>
         </methods>
-      </class> <!-- Frameworks.BlazeDemoTest -->
+      </class> <!-- Frameworks.BlazeDemoLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

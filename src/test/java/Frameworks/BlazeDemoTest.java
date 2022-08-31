@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,35 +24,25 @@ public class BlazeDemoTest extends BaseClass {
 	public WebDriver driver;
 	MainPage mp;
 	FlightOptionsPage fop;
+	BlazedemoUtilities bdu;
 	private static Logger log = LogManager.getLogger(BlazeDemoTest.class.getName());
 
-	@BeforeTest
+	@BeforeMethod
 	public void initializeDriverAndBrowser() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
 		mp = new MainPage(driver);
 		fop = new FlightOptionsPage(driver);
-		log.debug("Driver is Initialized");
-	}
-
-	@BeforeMethod
-	public void reloadWebPage() {
-		driver.get(prop.getProperty("url"));
+		bdu = new BlazedemoUtilities();
+		bdu.objectCreation(driver);
 	}
 
 	@Test
 	public void verifyTotalFlightOptionsAreFive() {
-		WebElement departureDropdownLocator = mp.getDepartureDropdownLocator();
-		Select departureDropdown = new Select(departureDropdownLocator);
-		departureDropdown.selectByIndex(2);
-		log.debug("Selected Departure Dropdown City");
-		WebElement destinationDropdownLocator = mp.getDestinationDropdownLocator();
-		Select destinationDropdown = new Select(destinationDropdownLocator);
-		destinationDropdown.selectByIndex(1);
-		log.debug("Selected Destination Dropdown City");
-		mp.getFindFlightsButton().click();
-		elementToClickableWait(driver, fop.chooseThisFlightButtonWait, 30);
-		Assert.assertEquals(fop.getFlightOptionsCount().size(), 5);
+		mp.selectDepartureDropdown(2);
+		mp.selectDestinationDropdown(1);
+		mp.clickOnFindFlightsButton();
+		Assert.assertEquals(fop.getSizeOfFlightOptions(), 5);
 		log.info("Test Case Passed");
 	}
 
@@ -66,19 +58,17 @@ public class BlazeDemoTest extends BaseClass {
 	 * Assert.assertEquals(driver.findElement(By.cssSelector("div#finish h4")).
 	 * getText(), "Hello World!"); }
 	 */
-	
+
 	@Test
 	public void verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage() {
 		String expectedText = "Flights from Paris to Buenos Aires:";
-		BlazedemoUtilities bdu = new BlazedemoUtilities();
-		bdu.objectCreation(driver);
-		bdu.openChooseThisFlightPage(driver, 0, 0);
-		Assert.assertEquals(fop.getHeadingText().getText().trim(), expectedText);		
+		bdu.openChooseThisFlightPage(2, 1);
+		Assert.assertEquals(fop.getHeadingText(), expectedText);
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 
 }

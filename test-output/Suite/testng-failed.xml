@@ -4,13 +4,24 @@
   <listeners>
     <listener class-name="Frameworks.Listeners"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="BlazeDemoWebSiteTest(failed)">
+    <classes>
+      <class name="Frameworks.BlazeDemoTest">
+        <methods>
+          <include name="initializeDriverAndBrowser"/>
+          <include name="verifyThatApplicationDisplaysCorrectDepartureAndDropdownInFlightOptionsPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Frameworks.BlazeDemoTest -->
+    </classes>
+  </test> <!-- BlazeDemoWebSiteTest(failed) -->
   <test thread-count="5" parallel="tests" name="BlazeDemoLoginTest(failed)">
     <classes>
       <class name="Frameworks.BlazeDemoLoginTest">
         <methods>
+          <include name="verifyJsonTestDataTestCase" invocation-numbers="0 1"/>
           <include name="tearDown"/>
           <include name="initializeDriverAndBrowser"/>
-          <include name="reloadWebPage"/>
           <include name="verifyApplicationDisplaysPageExpiredUponLoggingIn" invocation-numbers="0"/>
         </methods>
       </class> <!-- Frameworks.BlazeDemoLoginTest -->

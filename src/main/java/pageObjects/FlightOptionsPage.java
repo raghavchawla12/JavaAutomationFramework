@@ -8,29 +8,30 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class FlightOptionsPage {
+import resources.AbstractMethods;
+
+public class FlightOptionsPage extends AbstractMethods{
 
 	WebDriver driver;
 
 	public FlightOptionsPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-	// @FindBy(css="tbody tr")
-	// WebElement flightOptionsCount;
-
-	private By flightOptionsCount = By.cssSelector("tbody tr");
-
-	public List<WebElement> getFlightOptionsCount() {
-		return driver.findElements(flightOptionsCount);
-	}
-
-	@FindBy(css = "td:nth-child(2) > input")
-	private WebElement chooseThisFlightButton;
 	
+	// Wait Locators
+
 	public By chooseThisFlightButtonWait = By.cssSelector("td:nth-child(2) > input");
 
+	// Locators
+	
+	@FindBy(css="tbody tr")
+	public List<WebElement> flightOptionsCount;
+
+	@FindBy(css = "td:nth-child(2) > input")
+	public WebElement chooseThisFlightButton;
+	
 	public WebElement getChooseThisFlightButton() {
 		return chooseThisFlightButton;
 	}
@@ -38,8 +39,15 @@ public class FlightOptionsPage {
 	@FindBy(tagName= "h3")
 	private WebElement headingText;
 	
-	public WebElement getHeadingText() {
-		return headingText;
+	// Actions
+	
+	public int getSizeOfFlightOptions() {
+		return flightOptionsCount.size();
+	}
+	
+	public String getHeadingText() {
+		String text = headingText.getText().trim();
+		return text;
 	}
 
 }
